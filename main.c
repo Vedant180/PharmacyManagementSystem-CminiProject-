@@ -15,7 +15,7 @@ int main(){
         printf("Cannnot Open file!");
         return 0;
     }
-    while(1){
+    while(True){
         c=getc(fp);
         if(c=='\n'){
             count+=1;
