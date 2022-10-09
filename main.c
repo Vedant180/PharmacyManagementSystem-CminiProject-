@@ -37,15 +37,8 @@ int main(){
         printf("\n");
         printf("----------------------------------------------------------------------------------------------------\n\n");
         printf("\n");
-        // printf("1.Create Heap\n");
-        // printf("2.Display All Medicines\n");
-        // printf("3.Order Depleted Stocks Of Medicine\n");   //Also Save back to file(New list)
-        // printf("4.Display Order List\n");
-        // printf("5.Fill Stock\n");
-        // printf("6.Check Expiry\n");
-        // printf("7.Prepare Bill\n");
 
-        while(1){
+        while(){
         printf("1.Display All Medicines\n\n");
         printf("-------------------------------------------------------\n\n");
         printf("2.Order Depleted Stocks of Medicine\n\n");
@@ -56,7 +49,7 @@ int main(){
         printf("-------------------------------------------------------\n\n");
         printf("5.Bill\n\n");
         printf("-------------------------------------------------------\n\n");
-         printf("6.Create Heap\n\n");
+        printf("6.Create Heap\n\n");
         printf("-------------------------------------------------------\n\n");
         printf("7.Exit\n\n");
         printf("-------------------------------------------------------\n\n");
@@ -83,10 +76,7 @@ int main(){
             Save_To_File(&head);
             fp=fopen("order.txt","a+");
             
-            //root=create_minHeap(&head,&root);
-            //printf("%d",root->stock);
-            //Inorder_Traversal(root);
-            // Order_List(&root,&head);
+            
         }
         if(choice==3){
             Display_Order_List();
@@ -116,19 +106,3 @@ int main(){
 return 0;
 }
  
- 
- 
- 
-
-
-
-
- /* list*ptr8=head;
-while(ptr8!=NULL){
-        printf("%s\t",ptr8->name);
-        printf("%d\t",ptr8->stock);
-        printf("%lf\n",ptr8->price);
-
-    //     // printf("%s\n",ptr8->expiry);
-        ptr8=ptr8->next;
-    }*/
